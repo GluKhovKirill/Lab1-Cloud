@@ -19,7 +19,7 @@ jobs:
       - name: Do it
         run: |
          cat Dockerfile
-         yc help
+         ycp help
          echo "id cr.yandex/crp2dg4s9q5he94070t8 let's go"
          sudo docker build . -t cr.yandex/crp2dg4s9q5he94070t8/bmstu-labs
          sudo docker push cr.yandex/crp2dg4s9q5he94070t8/bmstu-labs
