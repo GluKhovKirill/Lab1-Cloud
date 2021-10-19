@@ -14,9 +14,12 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - run: cat Dockerfile
-      - run: echo "id cr.yandex/crp2dg4s9q5he94070t8 let's go"
-      - run: sudo docker build . -t cr.yandex/crp2dg4s9q5he94070t8/bmstu-labs
+      - name: Check out code
+        uses: actions/checkout@v2
+      - name: Do it
+        run: |
+         cat Dockerfile
+         echo "id cr.yandex/crp2dg4s9q5he94070t8 let's go"
+         sudo docker build . -t cr.yandex/crp2dg4s9q5he94070t8/bmstu-labs
 
 
