@@ -16,6 +16,6 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - run: echo "id cr.yandex/crp2dg4s9q5he94070t8 let's go"
-      - run: sudo docker build . -t cr.yandex/crp2dg4s9q5he94070t8/Lab1-Cloud
+      - run: sudo docker build . -t cr.yandex/crp2dg4s9q5he94070t8/bmstu-labs
 
 
